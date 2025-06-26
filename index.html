@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySyn</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    margin: 3rem;
+  
+   
+}
+.header-content{
+  height: 40%;
+display: flex;
+justify-content: space-around;
+
+}
+  .navi a{
+    
+
+   
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+ 
+ text-decoration: none;
+ color: rgb(97, 97, 97);
+}
+.navi{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.button{
+    border: 2px solid rgb(56, 58, 166);
+    background-color: rgb(64, 68, 175);
+    height: 20%;
+    padding: 4px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+.logo-text{
+    
+  
+
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+    font-size: large;
+    text-decoration-color: rgb(255, 0, 76);
+    color: black;
+ margin-top: 20px; 
+}
+.logo-icon{
+    height: 50px;
+    width: 50px;
+   
+}
+.logo{
+    display: flex;
+    gap: 2rem;
+    margin: 10px;
+    
+}
+.hero-content{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.hero-img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
+.leftbox{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+gap: 2rem;
+    padding: 4rem;
+}
+.head2{
+    font-size: xx-large;
+    
+
+    
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+}
+.head1{
+    color: rgb(86, 86, 86);
+    font-size: small;
+    font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.button1{
+    padding: 0.5rem;
+ border-radius: 10px;
+ color: white;
+ background-color: rgb(65, 65, 171);
+}
+.button2{
+    padding: 0.5rem;
+ border-radius: 10px;
+ color: white;
+ background-color: rgb(42, 42, 104);
+}
+.hero-button{
+    display: flex;
+    gap: 3rem;
+}
+.leftbox{
+    gap: 2rem;
+}
+.para{
+    color: rgb(88, 86, 86);
+}
+.logo{
+    
+
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+    font-size: large;
+    text-decoration: none;
+}
+
+
+
+
+.foot-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    
+  
+
+}
+    
+
+
+.googleimg{
+    height:40px;
+    width: 40px;
+    
+   
+}
+
+.microimg{
+    height: 20%;
+    width: 40%;
+}
+.linkimg{
+    height: 10%;
+    width: 15%;
+}
+.vectorimg{
+    height: 20%;
+    width: 20%;
+}
+.footer-content{
+    height: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    gap: 1rem;
+}
+.google{
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 20px;
+    
+}
+.gspan{
+   margin-top: 15px;
+}
+
+.microsoft{
+    display: flex;
+    
+    margin-top: 20px;
+}
+.mspan{
+   
+    
+    margin-top: 20px;
+}
+
+.Linkedin{
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 20px;
+}
+.lspan{
+   
+    
+    margin-top: 8px;
+}
+
+
+
+.Vector{
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 20px;
+    
+}
+
+.vspan{
+    
+    
+    margin-top: 10px;
+}
+.head-foot{
+    
+
+    
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+margin-left: 120px;
+
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+
+
+  
+   
+}
+.cardcontainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardcontent{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 180px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cardgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    justify-content: space-around;
+}
+.items{
+    
+    
+   height: 200px;
+   width: 300px;
+   padding: 30px;
+   border-radius: 10px;
+}
+
+#i1{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   background: #e0ffcd; 
+   color: rgb(0, 0, 0);
+   
+
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+   
+
+  
+}
+.img1{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+#i2{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   background: #fdffcd; 
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+   
+
+  
+}
+.img2{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+.h2{
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+#i3{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   background: #ffebbb; 
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+   
+
+  
+}
+.img3{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+#i4{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   
+   background: #ffcab0; 
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+  
+}
+.img4{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+#i5{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   background: #97cba9; 
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+   
+
+  
+}
+.img5{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#i6{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   background: #668ba4;
+   font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+   
+
+  
+}
+.img6{
+    margin-left: 80px;
+    width: 50px;
+    height: 50px;
+}
+.card-head{
+    
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.lastcontainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+   
+}
+
+.owner-content{
+height: 80%;
+width:90%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+    padding: 5px;
+}
+
+.items{
+    height: 200px;
+    width: 400px;
+    border: 1px black solid;
+}
+.ownergrid{
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.owner-head{
+    margin-top: 10px;
+}
+#it1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.it1img{
+    height: 70px;
+    width: 60px;
+    margin-left: 138px;
+    border-radius: 20px;
+}
+#it2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.it2img{
+    height: 70px;
+    width: 60px;
+    margin-left: 138px;
+    border-radius: 20px;
+}
+#it3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.it3img{
+    height: 70px;
+    width: 60px;
+    margin-left: 138px;
+    border-radius: 20px;
+}
+.it1para{
+    color: #575757;
+}
+.it1name{
+    color: #2b14da;
+    
+
+  
+
+    
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 0.9rem;
+font-weight: bold;
+
+}
+
+
+.it2para{
+    color: #575757;
+}
+.it2name{
+    color: #2b14da;
+    
+
+  
+
+    
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 0.9rem;
+font-weight: bold;
+
+}
+
+
+
+.it3para{
+    color: #575757;
+}
+.it3name{
+    color: #2b14da;
+    
+
+  
+
+    
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 0.9rem;
+font-weight: bold;
+
+}
+.emailcontent{
+    display: flex;
+    flex-direction: row;
+    
+}
+.right{
+    height: 300px;
+ width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 70px;
+    padding-left: 90px;
+    background-color:rgb(187, 223, 228);
+}
+.right h1{
+    color: #417090;
+}
+.randomimg{
+    height: 300px;
+    width: 600;
+}
+.emailc{
+    margin-top: 30px;
+}
+.emailc .write{
+    padding: 5px;
+    border-radius: 10px;
+}
+.emailc .send{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #4d83a7;
+    color: white;
+}
+.ac{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+
+}
+.a{
+    color: black;
+    text-decoration: none;
+}
+.leftside{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.span{
+    font-size:1.5rem;
+}
+.footerbox{
+    padding:50px;
+    margin-top:50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 15rem;
+    flex-direction: row;
+
+}
+
+.study{
+    height: 40px;
+    width: 40px;
+}
+
+.brands{
+    height: 25px;
+    width: 25px;
+   display:flex;
+   flex-direction:row;
+   gap:1rem;
+}
+.footpara{
+    color:gray;
+}
+.rightside{
+    display: flex;
+    flex-direction:row;
+  gap:6rem;
+}
+.list{
+    display:flex;
+    flex-direction:row;
+    list-style: none;
+    gap:6rem;
+ 
+}
+.Products{
+    list-style: none;
+}
+.Company{
+    list-style: none;
+}
+.Support{
+    list-style:none;
+}
+.Legal{
+    list-style: none;
+}
+.final{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: darkgray;
+}
+   </style>
+</head>
+<body>
+    <div class="header">
+
+
+        <div class="header-content">
+
+<a href="#logo" class="logo">
+
+<img src="StudySyn.svg" alt="logo"  class="logo-icon">
+<span class="logo-text">StudySyn</span>
+</a>
+
+<nav class="navi">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#blog">Blog</a>
+    <a href="#about">About</a>
+</nav>
+
+<button class="button">
+    Contact Us
+</button>
+
+        </div>
+    </div>
+
+
+<main class="hero-main">
+
+<div class="hero-content">
+    <section class="section1">
+        <div class="leftbox">
+            <div class="head1">
+                <h3>Very Proud To Introduce</h3>
+            </div>
+            <div class="head2">
+                <h1>Seemless Learning For Bright Futures</h1>
+            </div>
+            <div class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, nihil laudantium? Eius, at. Obcaecati iure saepe at nesciunt maxime natus nobis in, ab, accusamus rem eum enim. Vero, blanditiis iusto.
+            </div>
+            <div class="hero-button">
+                <button class="button1">
+                    Start now
+                </button>
+                <button class="button2">
+                    Take a tour
+                </button>
+            </div>
+            
+            
+                </div>
+            
+    </section>
+   <section class="section2">
+    <div class="rightbox">
+    <img src="images/img.png" alt="img" class="hero-img">
+</div>
+</section>
+</div>
+
+
+
+</main>
+
+<div class="footer">
+
+<div class="footer-content">
+    <div class="head-foot"><h2>Trusted by the best</h2>
+    </div>
+    <div class="foot-box">
+
+<div class="google">
+<img src="google-logo-icon-illustration-free-vector.jpg" alt="google" class="googleimg">
+<span class="gspan">Google</span>
+</div>
+
+<div class="microsoft">
+    <img src="micro.png" alt="microsoft" class="microimg">
+    <span class="mspan">Microsoft</span>
+    </div>
+
+    <div class="Linkedin">
+        <img src="linkedin.svg" alt="link" class="linkimg">
+        <span class="lspan">Linked In</span>
+        </div>
+    
+
+        <div class="Vector">
+            <img src="vectoredu.svg" alt="VectorEdu"  class="vectorimg">
+            <span class="vspan">VectorEdu</span>
+            </div> 
+
+    </div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="cardcontainer">
+<div class="cardcontent">
+<div class="card-head">
+    <h2>Our competitive advantages</h2>
+</div>
+<div class="cardpara">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, cumque!
+</div>
+<div class="cardgrid">
+    <div class="items" id="i1">
+<img src="light-bulb.png" alt="1" class="img1">
+<h3 class="h1">Personalized Learning</h3>
+<p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam.
+
+</p>
+
+    </div>
+    <div class="items"  id="i2">
+        <img src="salary.png" alt="2" class="img2">
+        <h3 class="h2">Affortability</h3>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam.
+        
+        </p></div>
+    <div class="items" id="i3"><img src="patnership.png" alt="3" class="img3">
+        <h3 class="h3">Industry Patnership</h3>
+        <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam.
+        
+        </p></div>
+    <div class="items" id="i4"> 
+        <img src="technology.png" alt="4" class="img4">
+        <h3 class="h4">Inovative Technology</h3>
+        <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam.
+        
+        </p>
+    </div>
+    <div class="items" id="i5">
+        <img src="phone-call.png" alt="5" class="img5">
+        <h3 class="h5">Responsive Support</h3>
+        <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam.
+        
+        </p>
+    </div>
+    <div class="items" id="i6">
+        <img src="analysis.png" alt="6" class="img6">
+        <h3 class="h6">Analysis and Insights</h3>
+        <p class="p6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quibusdam.
+        
+        </p>
+    </div>
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="lastcontainer">
+<div class="owner-content">
+    <div class="owner-head">
+        <h2>What other say about us</h2>
+    </div>
+
+    <div class="ownergrid">
+         <div class="items" id="it1">
+            <div class="it1para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, ea?</p>
+                <img src="shreya.jpg" alt="profile" class="it1img">
+            </div>
+            <div class="it1name">Shreyash Jadhav</div>
+            <div class="it1profes">Chief</div>
+            </div>
+        
+
+         <div class="items" id="it2"><div class="it2para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aliquid.</p>
+            <img src="sp.jpg" alt="profile" class="it2img">
+        </div>
+        <div class="it2name">Shivprasad Chougule</div>
+        <div class="it2profes">web developer</div></div>
+         <div class="items" id="it3">
+            <div class="it3para">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, accusamus.</p>
+            <img src="onkar.jpg" alt="profile" class="it3img">
+        </div>
+        <div class="it3name">Onkar Allewar</div>
+        <div class="it3profes">Finance manager</div></div>
+    </div>
+
+</div>
+
+<div class="emailcontent">
+<div class="left">
+    <img src="Nice-Random-Wallpaper.jpg" alt="Random" class="randomimg">
+</div>
+<div class="right">
+    <div class="emailhead">
+        <h1>Get the latest update</h1>
+        <div class="parae">
+            <p>Signup for our new newspaper</p>
+        </div>
+    </div>
+   
+    <div class="emailc">
+        <input type="email" placeholder="Email" class="write">
+        <button type="submit" class="send">Send</button>
+        
+</div>
+<div class="emailpara"></div>
+<p>
+    By signing up in our newspaper you agree with our</p>
+    <div class="ac"><a href="#">Terms</a><a href="#" class="a">and</a>
+        <a href="#">Conditions</a></div>
+    
+  
+
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+<div class="footerbox">
+    <div class="leftside">
+        <div class="u">
+            <img src="StudySyn.svg" alt="s" class="study">
+            <span class="span">StudySync</span>
+        </div>
+  <p class="footpara">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <div class="brands">
+            <img src="twitter-brands.svg" alt="t" class="t">
+            <img src="ingram brand.svg" alt="insta" class="insta">
+            <img src="github-brands.svg" alt="git" class="git">
+            <img src="linkedin-brands.svg" alt="li" class="li">
+        </div>
+
+    </div>
+
+    <div class="rightside">
+        <div class="list">
+            <ul class="Products">
+            <li ><h3>Products</h3></li>
+            <li>Overview</li>
+            <li>Solutions</li>
+            <li>Pricing</li>
+            <li>Customers</li>
+        </ul>
+
+
+        <ul class="Company">
+            <li ><h3>Company</h3></li>
+            <li>Overview</li>
+            <li>Solutions</li>
+            <li>Pricing</li>
+            <li>Customers</li>
+        </ul>
+
+
+        <ul class="Support">
+            <li ><h3>Support</h3></li>
+            <li>Overview</li>
+            <li>Solutions</li>
+            <li>Pricing</li>
+            <li>Customers</li>
+        </ul>
+
+
+
+        <ul class="Legal">
+            <li >
+                <h3>Legal</h3></li>
+            <li>Overview</li>
+            <li>Solutions</li>
+            <li>Pricing</li>
+            <li>Customers</li>
+        </ul></div>
+        
+
+
+    </div>
+    
+</div>
+<footer class="final">
+    &copy; 2025 Presents StudySync All rights Reserved
+</footer>
+</body>
+</html>
